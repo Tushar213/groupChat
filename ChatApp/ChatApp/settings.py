@@ -80,7 +80,9 @@ TEMPLATES = [
     },
 ]
 
-ASGI_APPLICATION = 'ChatApp.asgi.application'
+WSGI_APPLICATION = 'ChatApp.wsgi.application'
+
+ASGI_APPLICATION = 'ChatApp.routing.application'
 
 
 # Database
