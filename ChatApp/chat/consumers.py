@@ -24,6 +24,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
 				"message" : message ,
 				"username" : username ,
 			})
+			
 	async def sendMessage(self , event) :
 		message = event["message"]
 		username = event["username"]
